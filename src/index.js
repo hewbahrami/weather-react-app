@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'weather-icons/css/weather-icons.css';
 import App from './App';
 
 ReactDOM.render(
