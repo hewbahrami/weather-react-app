@@ -5,11 +5,10 @@ const Weather = ({ city, description, icon, temperature, high, low, feels_like, 
     return (
         <div className="weather">
             {city && <p className="city">{city}</p>}
-            {/* <i className='wi wi-day-sunny' /> */}
             <div className="basic-info">
-                {icon && <i className={`wi ${icon}`} />}
+                {icon && <i className={`wi ${icon} icon`} />}
                 <div className="temp-feel">
-                    {temperature && <p className="temp">{Math.round(temperature)}°</p>}
+                    {temperature && <p className="temp"><span className="wi wi-thermometer"></span>{Math.round(temperature)}°</p>}
                     {feels_like && <p className="feels-like">Feels Like: {Math.round(feels_like)}°</p>}
                 </div>
             </div>

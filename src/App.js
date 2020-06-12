@@ -90,7 +90,6 @@ class App extends Component {
     return (
       <div className="container">
         <div className="title-form">
-          <Titles />
           <Form getWeather={this.getWeather} city={this.state.city} />
         </div>
         <Weather

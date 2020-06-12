@@ -2,36 +2,37 @@
 
 .container {
   height: 100vh;
-  background: url("../images/pink_stars.png") center center no-repeat;
+  background: url("../images/desert.jpg") center center no-repeat;
   background-size: cover;
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: flex;
-}
-
-.title-form {
-  width: 50vh;
-  display: block;
 }
 
 .weather {
   font-size: 1.2rem;
-  text-transform: uppercase;
+  text-transform: full-width;
+  min-width: 70vh;
+  letter-spacing: 0.2rem;
+}
+
+span {
+  transform: scale(0.7);
 }
 
 .temp {
-  font-size: 2.5rem;
+  font-size: 5.7rem;
   font-weight: bolder;
 }
 
 .city {
   font-size: 5rem;
   font-weight: bolder;
+  letter-spacing: 1rem;
 }
 
 .icon {
-  transform: scale(2);
+  transform: scale(7);
 }
 
 .basic-info {
@@ -41,11 +42,35 @@
 }
 
 .temp-feel {
+  line-height: 1rem;
 }
-/* .main {
-  height: 80vh;
-  background: url("/images/weather-app-background.png");
-  align-items: center;
+
+/*
+FORM
+*/
+
+.title-form {
+  display: flex;
+  width: 50vh;
   justify-content: center;
   text-align: center;
-} */
+}
+
+input[name="city"] {
+  background: transparent;
+  color: black;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+input[name="city"]:active {
+  background: transparent;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
