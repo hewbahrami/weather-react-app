@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lato:wght@100&display=swap");
 
 .container {
   height: 100vh;
@@ -9,15 +11,68 @@
   text-align: center;
 }
 
+/*************************************
+WEATHER CONTAINER
+*************************************/
+
+.weather-container {
+  display: block;
+}
+
+/*************************************
+WEATHER NOW
+*************************************/
+
 .weather {
+  min-height: 50vh;
   font-size: 1.2rem;
   text-transform: full-width;
   min-width: 70vh;
   letter-spacing: 0.2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-span {
-  transform: scale(0.7);
+.info-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.high-low-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 2.5rem;
+}
+
+/********************
+city & description
+*/
+
+.city-description {
+  margin-top: 4rem;
+  line-height: 2.2rem;
+}
+
+.city {
+  font-size: 5.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  font-family: "Josefin Sans";
+}
+
+/********************
+basic info
+*/
+
+.basic-info {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: space-around;
 }
 
 .temp {
@@ -25,31 +80,20 @@ span {
   font-weight: bolder;
 }
 
-.city {
-  font-size: 5rem;
-  font-weight: bolder;
-  letter-spacing: 1rem;
-}
-
 .icon {
   transform: scale(7);
-}
-
-.basic-info {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin-left: 60px;
 }
 
 .temp-feel {
   line-height: 1rem;
 }
 
-/*
-FORM
-*/
+/*************************************
+SEARCH FORM
+*************************************/
 
-.title-form {
+.search-bar {
   display: flex;
   width: 50vh;
   justify-content: center;
@@ -59,17 +103,28 @@ FORM
 input[name="city"] {
   background: transparent;
   color: black;
-  outline: none;
-  border: 0;
+  border: none;
   border-bottom: 2px solid black;
   border-radius: 2px;
+  outline: 0;
   font-size: 1rem;
+  font-weight: bold;
 }
 
-input[name="city"]:active {
+/*not working */
+input[name="city"]:active,
+input[name="city"]:focus {
   background: transparent;
+  color: black;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  outline: 0;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
+/*not working */
 ::-webkit-input-placeholder {
   color: black;
   opacity: 1;

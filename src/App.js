@@ -89,20 +89,22 @@ class App extends Component {
     const { temperature, feels_like, high, low, city, humidity, description, icon, error } = this.state;
     return (
       <div className="container">
-        <div className="title-form">
-          <Form getWeather={this.getWeather} city={this.state.city} />
+        <div className="search-bar">
+          <Form getWeather={this.getWeather} city={city} />
         </div>
-        <Weather
-          temperature={temperature}
-          feels_like={feels_like}
-          high={high}
-          low={low}
-          city={city}
-          humidity={humidity}
-          description={description}
-          icon={icon}
-          error={error}
-        />
+        <div className="weather-container">
+          <Weather
+            temperature={temperature}
+            feels_like={feels_like}
+            high={high}
+            low={low}
+            city={city}
+            humidity={humidity}
+            description={description}
+            icon={icon}
+            error={error}
+          />
+        </div>
       </div>
 
     )
