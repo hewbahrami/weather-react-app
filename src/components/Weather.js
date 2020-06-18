@@ -21,8 +21,6 @@ const Weather = ({ city, description, icon, temperature, high, low, feels_like, 
                     {humidity && <p className="humidity">humidity: {humidity}%</p>}
                 </div>
             </div>
-            {/* <div className="forecast-container">
-            </div> */}
             {error && <p>{error}</p>}
         </div>
     )

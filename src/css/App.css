@@ -143,3 +143,15 @@ FORECAST FORM
 .forecast-container {
   display: flex;
 }
+
+.forecast-item {
+  margin-left: 5px;
+  margin-right: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.forecast-icon {
+  transform: scale(1.5);
+}

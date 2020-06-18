@@ -143,6 +143,7 @@ class App extends Component {
           />
         </div>
         <div className="forecast-container">
+          {/* <hr></hr> */}
           <Forecast forecasts={forecasts} />
         </div>
       </div>
