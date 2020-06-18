@@ -68,7 +68,7 @@ const ForecastItem = ({ temp, icon, day, hour }) => {
 
     return (
         <div className="forecast-item">
-            {day && <h1 className="day">{getDayOfWeek(day)}</h1>}
+            {day && <h1 className="forecast-day">{getDayOfWeek(day)}</h1>}
             {temp && <p className="forecast-temp">{Math.round(temp)}</p>}
             {icon && <i className={`wi ${getForecastIcon(icon)} forecast-icon`} />}
         </div >
